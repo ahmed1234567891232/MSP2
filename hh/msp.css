@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.parent {
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 100%;
+}
+
+.parent div {
+    background-color: red;
+    color: white;
+    text-align: center;
+    width: 300px ;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width:767px) {
+    .parent div {
+        background-color: rgb(80, 14, 94);
+        color: white;
+    }
+}
+@media (min-width:768px) and (max-width:1024px) {
+    .parent div {
+        background-color: rgb(149, 147, 26);
+        color: black;
+    }
+}
+@media (min-width:1025px) {
+    .parent div {
+    background-color: red;
+    color: white;
+    }
+}
